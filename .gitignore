@@ -1,0 +1,4 @@
+.idea
+venv
+/airflow_connections.csv
+.DS_Store
