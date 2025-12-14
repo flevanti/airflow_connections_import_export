@@ -9,7 +9,21 @@ While it could technically be used in productions environments, it has been desi
 
 It can also be used as a very basic way to keep connections updated when connection details are rotated often.
 
----
+
+## Implementations
+
+This tool is available in three different implementations:
+
+| Implementation | Interface         | Repository                                                                                         |
+|----------------|-------------------|----------------------------------------------------------------------------------------------------|
+| **Python**     | CLI               | [airflow_connections_import_export](https://github.com/flevanti/airflow_connections_import_export) |
+| **Swift**      | Native macOS app  | [AirflowConnectionMigrator](https://github.com/flevanti/AirflowConnectionMigrator)                 |
+| **Go**         | Web server or TUI | [airflow-migrator](https://github.com/flevanti/airflow-migrator)                                   |
+
+All implementations share the same Fernet encryption format, so exported files are interchangeable between them.
+> As part of the Swift implementation, a standalone Fernet encryption library was developed and
+> released: [SwiftFernet](https://github.com/flevanti/SwiftFernet)
+
 
 ## Overview
 
