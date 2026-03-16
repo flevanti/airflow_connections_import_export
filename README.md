@@ -55,9 +55,9 @@ The visual workflow is shown below:
 
 ## Requirements
 
-- Python 3.10+
+- Python 3.11+
 - `cryptography`
-- `psycopg2`
+- `psycopg3`
 - Access to the Airflow metadata database.
 - Fernet keys for the source system, shared file, and target system (depending on the operation). 
 

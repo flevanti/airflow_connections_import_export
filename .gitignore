@@ -1,4 +1,7 @@
-.idea
-venv
+.idea/
+venv/
+.venv/
 /airflow_connections.csv
 .DS_Store
+*.egg-info/
+build/
